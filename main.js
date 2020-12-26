@@ -6,8 +6,14 @@ let prompt = require('prompt-sync')({sigint: true});
  price_laptop = parseFloat(price_laptop);
  tax = parseFloat(tax);
 
- let total_amount = price_laptop +30
- console.log(total_amount)
+ let total_amount = (price_laptop * tax) /100
+
+ let total = (price_laptop + total_amount)
+ 
+console.log(total)
+ 
+
+
 
 
  
